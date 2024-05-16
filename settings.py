@@ -51,8 +51,8 @@ class Settings():
         Инициализируем настройки, изменяющиеся в ходе игры.
         """
         self.ship_speed_factor = 0.1
-        self.bullet_speed_factor = 0.01
-        self.alien_speed_factor = 0.1
+        self.bullet_speed_factor = 0.09
+        self.alien_speed_factor = 0.01
         # fleet_direction = 1 обозначает движение в право, а -1 - влево.
         self.fleet_direction = 1
         # Подсчет очков
@@ -66,5 +66,3 @@ class Settings():
         self.bullet_speed_factor *= self.speedup_scale
         self.alien_speed_factor *= self.speedup_scale
         self.alien_points = int(self.alien_points * self.score_scale)
-        # Показывает увеличиную стоимоть пришельца
-        # print(self.alien_points)
