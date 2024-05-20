@@ -45,6 +45,7 @@ class Alien(Sprite):
         """
         Перемещает пришельца влево или вправо.
         """
-        self.x += (self.ai_settings.alien_speed_factor * \
-                   self.ai_settings.fleet_direction)
+        alien_speed_factor = self.ai_settings.alien_speed_factor
+        fleet_direction = self.ai_settings.fleet_direction
+        self.x += (alien_speed_factor * fleet_direction)
         self.rect.x = self.x
